@@ -12,8 +12,6 @@ const Project = () => {
         i++;
     }
 
-    console.log(project);
-
     return (
         <div className="Project">
             <div className="Project-content">

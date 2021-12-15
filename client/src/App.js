@@ -54,7 +54,7 @@ function App() {
             <Route exact path="/audio-production" element={<ProjectList projects={audioProduction} />} />
             <Route exact path="/marketing" element={<ProjectList projects={marketing} />} />
             <Route exact path="/project-management" element={<ProjectList projects={projectManagement} />} />
-            <Route exact path="/projects/:projectRoute" element={<Project />} />
+            <Route path="/projects/:projectRoute" element={<Project />} />
           </Routes>
         </div>
       </BrowserRouter>
