@@ -1,0 +1,47 @@
+.NavBar {
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: var(--navbar-width);
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 0 15px black;
+}
+
+.NavBar-logo {
+    font-weight: bold;
+    font-size: 84px;
+    background-color: white;
+    color: var(--primary);
+    padding: 1.5rem;
+    border-bottom: 8px solid var(--accent);
+}
+
+.NavBar-logo:hover {
+    cursor: pointer;
+}
+
+.NavBar-link {
+    text-align: right;
+    font-weight: bold;
+    padding: 1rem;
+    transition: 250ms;
+}
+
+.NavBar-link:hover {
+    cursor: pointer;
+    background-color: var(--primary-dark);
+    transition: 250ms;
+}
+
+.NavBar-link-selected {
+    text-align: right;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: var(--secondary);
+}
+
+.NavBar-link-selected:hover {
+    cursor: pointer;
+}

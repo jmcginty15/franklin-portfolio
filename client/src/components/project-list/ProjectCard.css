@@ -1,0 +1,62 @@
+.ProjectCard {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    box-shadow: 0 0 15px black;
+}
+
+.ProjectCard-container {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 500ms;
+    background-color: rgb(0, 0, 0, 0.75);
+    color: white;
+    text-align: left;
+    vertical-align: center;
+}
+
+.ProjectCard-container:hover {
+    opacity: 1;
+    transition: 500ms;
+    cursor: default;
+}
+
+.ProjectCard-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.ProjectCard-title {
+    flex-grow: 0;
+    margin: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.ProjectCard-description {
+    flex-grow: 1;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    overflow: hidden;
+    margin: 0;
+}
+
+.ProjectCard-link {
+    flex-grow: 0;
+    display: block;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    color: white;
+    transition: 250ms;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    width: fit-content;
+}
+
+.ProjectCard-link:hover {
+    color: var(--secondary);
+    transition: 250ms;
+}

@@ -1,0 +1,26 @@
+.ProjectList {
+    display: grid;
+    margin-left: auto;
+    width: calc(100% - var(--navbar-width));
+    background-color: var(--primary);
+    min-height: 100vh;
+    row-gap: 0;
+}
+
+@media (min-width: 1025px) {
+    .ProjectList {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .ProjectList {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ProjectList {
+        grid-template-columns: 50% 50%;
+    }
+}
