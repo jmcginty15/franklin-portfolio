@@ -18,9 +18,6 @@ const ProjectList = ({ projects }) => {
         case 'video':
             dispatch(setActiveNavLink('video'));
             break;
-        case '':
-            dispatch(setActiveNavLink('home'));
-            break;
         case 'motion-graphics':
             dispatch(setActiveNavLink('motionGraphics'));
             break;
@@ -42,8 +39,10 @@ const ProjectList = ({ projects }) => {
     }
 
     return (
-        <div className="ProjectList">
-            {projects.map(project => <ProjectCard key={project.id} project={project} />)}
+        <div className="ProjectList-container">
+            <div className="ProjectList">
+                {projects.map(project => <ProjectCard key={project.id} project={project} />)}
+            </div>
         </div>
     )
 }

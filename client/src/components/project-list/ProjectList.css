@@ -1,9 +1,12 @@
+.ProjectList-container {
+    min-height: 100vh;
+    background-color: var(--primary);
+}
+
 .ProjectList {
     display: grid;
     margin-left: auto;
     width: calc(100% - var(--navbar-width));
-    background-color: var(--primary);
-    min-height: 100vh;
     row-gap: 0;
 }
 
